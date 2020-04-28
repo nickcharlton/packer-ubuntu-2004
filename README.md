@@ -17,6 +17,7 @@ packer build ubuntu-2004.json
 
 Copyright (c) 2020 Nick Charlton. MIT Licensed.
 
+[Packer]: https://packer.io
 [1]: https://www.debian.org/devel/debian-installer/
 [2]: https://github.com/CanonicalLtd/subiquity
 [3]: https://nickcharlton.net/posts/automating-ubuntu-2004-installs-with-packer.html
