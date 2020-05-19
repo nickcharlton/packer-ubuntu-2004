@@ -10,13 +10,15 @@
       "iso_checksum": "caf3fd69c77c439f162e2ba6040e9c320c4ff0d69aad1340a514319a9264df9f",
       "iso_checksum_type": "sha256",
 
-      "ssh_username": "ubuntu",
-      "ssh_password": "ubuntu",
+      "ssh_username": "{{user `ssh_user`}}",
+      "ssh_password": "{{user `ssh_pass`}}",
       "ssh_handshake_attempts": "20",
 
       "http_directory": "http",
 
       "memory": 1024,
+
+      "shutdown_command": "echo {{user `ssh_pass`}} | sudo -S shutdown -P now",
 
       "boot_wait": "5s",
       "boot_command": [
@@ -32,5 +34,9 @@
       "type": "shell",
       "inline": ["ls /"]
     }
-  ]
+  ],
+  "variables": {
+    "ssh_user": "ubuntu",
+    "ssh_pass": "ubuntu"
+  }
 }
