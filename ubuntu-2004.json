@@ -12,7 +12,8 @@
 
       "ssh_username": "{{user `ssh_user`}}",
       "ssh_password": "{{user `ssh_pass`}}",
-      "ssh_handshake_attempts": "20",
+      "ssh_handshake_attempts": "30",
+      "ssh_timeout": "10m",
 
       "http_directory": "http",
 
