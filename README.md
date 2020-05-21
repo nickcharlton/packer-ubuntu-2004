@@ -13,6 +13,18 @@ This is the companion example to my notes on doing this, [_Automating Ubuntu
 packer build ubuntu-2004.json
 ```
 
+## Issues
+
+In case you see the following error, you need to bump the **ssh_handshake_attempts**
+```
+==> ubuntu-2004: Error waiting for SSH: Packer experienced an authentication error when trying to connect via SSH. This can happen if your username/password are wrong. You may want to double-check your credentials as part of your debugging process. original error: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+```
+
+In case you see the following error, you need to bump the **ssh_timeout**
+```
+==> ubuntu-2004: Timeout waiting for SSH.
+```
+
 ## Author
 
 Copyright (c) 2020 Nick Charlton. MIT Licensed.
