@@ -11,7 +11,7 @@
 
       "ssh_username": "ubuntu",
       "ssh_password": "ubuntu",
-      "ssh_handshake_attempts": "20",
+      "ssh_timeout": "30m",
 
       "http_directory": "http",
 
